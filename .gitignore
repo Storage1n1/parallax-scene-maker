@@ -1,0 +1,7 @@
+output/
+__pycache__/
+*.pyc
+*.log
+.ai_cache/
+camera_timeline.json
+.env

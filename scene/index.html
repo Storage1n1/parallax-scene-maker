@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parallax Scene Stage</title>
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; background: #000; }
+  #stage { width: 1280px; height: 720px; display: block; }
+  #textLayer { position: absolute; top: 0; left: 0; width: 1280px; height: 720px; pointer-events: none; }
+  .caption { position: absolute; font-family: Georgia, serif; white-space: normal; text-align: center; max-width: 86%; line-height: 1.25; text-shadow: 0 2px 10px rgba(0,0,0,0.75); }
+</style>
+</head>
+<body>
+  <div id="root" style="position:relative; width:1280px; height:720px;">
+    <canvas id="stage"></canvas>
+    <div id="textLayer"></div>
+  </div>
+  <script src="three.min.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
